@@ -1,0 +1,215 @@
+html { overflow: hidden; }
+
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.a:link, a:visited
+{
+    color: white;
+}
+
+.anim1,.anim2,.anim3,.anim4
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+img
+{
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite;
+}
+
+@keyframes zoom-out
+{
+    100%
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.text-box
+{
+    width: 600px;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    color:white;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+}
+
+.text-box1
+{
+    animation-delay: 0s;
+}
+.text-box2
+{
+    animation-delay: 3s;
+}
+.text-box3
+{
+    animation-delay: 6s;
+}
+.text-box4
+{
+    animation-delay: 9s;
+}
+
+@keyframes textup
+{
+    10%
+    {
+        transform: translateY(0px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+.text-box h1
+{
+    margin-bottom: 20px;
+}
+
+.text-box p
+{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 80px;
+}
+
+.text-box span
+{
+    background: rgb(87, 182, 229);
+    height: 3px;
+    width: 200px;
+    position: absolute;
+}
+
+.anim1
+{
+    animation: pic1 12s linear infinite;
+}
+.anim2
+{
+    animation: pic2 12s linear infinite;
+}
+.anim3
+{
+    animation: pic3 12s linear infinite;
+}
+.anim4
+{
+    animation: pic4 12s linear infinite;
+}
+
+@keyframes pic1
+{
+    0%
+    {
+        visibility: visible;
+    }
+    25%
+    {
+        visibility: hidden;
+    }
+    50%
+    {
+        visibility: hidden;
+    }
+    75%
+    {
+        visibility: hidden;
+    }
+    100%
+    {
+        visibility: visible;
+    }
+}
+
+@keyframes pic2
+{
+    0%
+    {
+        visibility: hidden;
+    }
+    25%
+    {
+        visibility: hidden;
+    }
+    50%
+    {
+        visibility: visible;
+    }
+    75%
+    {
+        visibility: hidden;
+    }
+    100%
+    {
+        visibility: hidden;
+    }
+}
+
+@keyframes pic3
+{
+    0%
+    {
+        visibility: hidden;
+    }
+    25%
+    {
+        visibility: hidden;
+    }
+    50%
+    {
+        visibility: hidden;
+    }
+    75%
+    {
+        visibility: visible;
+    }
+    100%
+    {
+        visibility: hidden;
+    }
+}
+
+@keyframes pic4
+{
+    0%
+    {
+        visibility: hidden;
+    }
+    25%
+    {
+        visibility: hidden;
+    }
+    50%
+    {
+        visibility: hidden;
+    }
+    75%
+    {
+        visibility: hidden;
+    }
+    100%
+    {
+        visibility: visible;
+    }
+}
